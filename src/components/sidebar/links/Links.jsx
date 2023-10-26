@@ -1,4 +1,32 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+
+
+const itemvariants = {
+  open: {
+    y:0,
+    opacity:1,
+  },
+    closed: {
+      y: 50,
+      opacity:0,
+    },
+  };
+const variants = {
+  open: {
+    transition:{
+      straggerChildren:0.1
+    },
+  },
+    closed: {
+      transition:{
+        straggerChildren:0.05,
+        straggerDirection: -1,
+      },
+    },
+  };
+
+
 
 const Links = () => {
 const items = [
@@ -10,11 +38,14 @@ const items = [
 ]
 
   return (
-    <div className='links'>{items.map(item=>(
-      <a href={`#${item}`} key={item}>
+    <motion.div className='links' variants={variants}>
+      {items.map(item=>(
+      <motion.a href={`#${item}`} key={item} variants={itemvariants} whileHover={{scale:1.1}} 
+      whileTap={{scale:0.95}}>
         {item}
-      </a>
-    ))}</div>
+      </motion.a>
+    ))}
+    </motion.div>
   )
 }
 
