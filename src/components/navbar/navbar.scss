@@ -1,8 +1,10 @@
+@import "../../app.scss";
+
 .navbar{
     height: 100px;
 
     .wrapper{
-        max-width: 1366px;
+        max-width: 1280px;
         margin: auto;
         display: flex;
         align-items: center;
