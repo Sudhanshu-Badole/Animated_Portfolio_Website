@@ -1,12 +1,11 @@
-import React from 'react';
-import "./navbar.scss";
+import React from 'react'
 import {motion} from "framer-motion";
-import Sidebar from '../sidebar/Sidebar';
-const Navbar = () => {
+import "./work.scss"
+const Work = () => {
   return (
+    <>
     <div className='navbar'>
         {/* sidebar */}
-        <Sidebar/>
 <div className="wrapper">
     <motion.span
     initial={{ opacity: 0, scale: 0.5}}
@@ -30,7 +29,10 @@ const Navbar = () => {
 </div>
 
     </div>
+    </>
+
+
   )
 }
 
-export default Navbar
+export default Work
