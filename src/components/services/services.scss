@@ -1,10 +1,13 @@
 @import "../../app.scss";
+
 .services {
-  background: linear-gradient(180deg, #000000, #100a22);
+  background: linear-gradient(180deg, #000000, #000001);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+
 
   .textContainer {
     flex: 1;
@@ -36,6 +39,7 @@
       }
     }
   }
+
   .titleContainer {
     flex: 2;
     display: flex;
@@ -95,6 +99,7 @@
       }
     }
   }
+
   .listContainer {
     flex: 2;
     display: flex;
@@ -143,4 +148,91 @@
       }
     }
   }
+}
+
+.skills {
+  height: 100%;
+
+  .wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
+    letter-spacing: 1.5px;
+    color: #F8F8F8;
+    font-family: "Sen", sans-serif;
+
+    h2 {
+      text-align: center;
+      padding-top: 3%;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      span {
+        -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
+        box-shadow: inset 0px -5px 0px 0px #FFA818;
+        
+      }
+    }
+
+    .skills-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 6% auto;
+
+      .skills-title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        justify-content: center;
+        -ms-flex-preferred-size: 23%;
+        flex-basis: 20%;
+        padding: 10px;
+
+        span {
+          font-size: 4.5rem;
+          color: white;
+
+          &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+
+            color: #FFA818;
+          }
+        }
+
+        p {
+          text-align: center;
+          font-size: 1rem;
+          font-weight: bold;
+
+        }
+      }
+    }
+
+  }
+
 }

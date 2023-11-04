@@ -34,83 +34,111 @@ const Services = () => {
       ref={ref}
       animate={"animate"}
     >
-      <motion.div className="textContainer" variants={variants}>
-        <p>
-          I focus on helping your brand grow
-          <br /> and move forward
-        </p>
-        <hr />
-      </motion.div>
-      <motion.div className="titleContainer" variants={variants}>
-        <div className="title">
-          <img src="/people.webp" alt="" />
-          <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
-          </h1>
-        </div>
-        <div className="title">
-          <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
-          </h1>
-          <button>WHAT WE DO?</button>
-        </div>
-      </motion.div>
-      <motion.div className="listContainer" variants={variants}>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
-        </motion.div>
-      </motion.div>
+      
+      <section className="skills">
+            <div className="wrapper">
+
+                <h2><span>Skills</span></h2>
+            
+                <ul className="skills-container">
+
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicons devicons-python" title="HTML5"></span>
+                        
+                        <p>Python</p>
+                    </li>
+                    <li className="skills-title">
+                      
+                        <span aria-hidden="true" className="devicons devicons devicons-django" title="HTML5"></span>
+                        
+                        <p>Django</p>
+                    </li>
+                    <li className="skills-title">
+                      
+                        <span aria-hidden="true" className="devicons devicons devicons-html5" title="HTML5"></span>
+                        
+                        <p>HTML5</p>
+                    </li>
+
+                    <li className="skills-title">
+                        <span aria-hidden="true"  className="devicons devicons-css3" title="CSS"></span>
+                        <p>CSS</p>
+                    </li>
+                    <li className="skills-title">
+                        <span aria-hidden="true"  className="devicon-tailwindcss-plain" title="tailwindcss"></span>
+                        <p>tailwindcss</p>
+                    </li>
+
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicons-javascript_badge" title="JavaScript & ES6"></span>
+                        <p>JavaScript + ES6</p>
+                    </li>
+
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicons-sass" title="SASS"></span>
+                        <p>Sass</p>
+                    </li>
+
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicon-mysql-plain-wordmark" title="MySQL"></span>
+                        <p>MySQL</p>
+                    </li>
+
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicon-postgresql-plain" title="PostgreSQL"></span>
+                        <p>PostgreSQL</p>
+                    </li>
+
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="material-icons">settings_ethernet</span>
+                        <p>REST APIs</p>
+                    </li>
+                
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicons devicon-react-original" title="React"></span>
+                        <p>React</p>
+                    </li>
+
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicons-firebase" title="Firebase"></span>
+                        <p>Firebase</p>
+                    </li>
+                
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicons-git" title="Git"></span>
+                        <p>Git</p>
+                    </li>
+                    
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicons-terminal_badge" title="Terminal"></span>
+                        <p>Terminal</p>
+                    </li>
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicon-linux-plain" title="linux"></span>
+                        <p>Linux</p>
+                    </li>
+        
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="devicons devicons-responsive" title="Responsive Design"></span>
+                        <p>Responsive
+                        <br/>
+                        Design</p>
+                    </li>
+
+                    <li className="skills-title">
+                        <span aria-hidden="true" className="fas fa-universal-access" title="Accessibility"></span>
+                        <p>Accessibility</p>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
     </motion.div>
   );
 };
 
 export default Services;
+
+
+
