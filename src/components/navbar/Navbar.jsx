@@ -18,8 +18,7 @@ const Navbar = () => {
                 </motion.span>
                 <div className="social">
                     <a href="#">
-            <i className="devicon-linkedin-plain"></i>
-          
+                        <i className="devicon-linkedin-plain"></i>
                     </a>
                     <a href="#">
                         <i className="devicon-github-original"></i>

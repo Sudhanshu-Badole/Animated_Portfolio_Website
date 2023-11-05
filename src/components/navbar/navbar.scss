@@ -16,6 +16,7 @@
       padding: 20px;
     }
 
+
     span {
       font-weight: bold;
 
@@ -25,6 +26,8 @@
       font-weight: bold;
       }
 
+      
+
       @include mobile {
         display: none;
       }
@@ -33,6 +36,13 @@
     .social {
       display: flex;
       gap: 20px;
+
+      a{
+      
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+        }
 
       img {
         width: 25px;

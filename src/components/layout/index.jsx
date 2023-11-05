@@ -7,6 +7,7 @@ import Navbar from "../navbar/Navbar";
 import Parallax from "../parallax/Parallax";
 import Portfolio from "../portfolio/Portfolio";
 import Services from "../services/Services";
+import About from "../about/About";
 
 const Index = () => {
   return <div>
@@ -29,7 +30,6 @@ const Index = () => {
     <section id="Contact">
       <Contact/>
     </section>
-    <Work/>
   </div>;
 };
 
