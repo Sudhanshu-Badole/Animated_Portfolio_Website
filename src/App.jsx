@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route }
 const App = () => {
   return (
     <Router>
-            <Routes>
+            <Routes base="/">
                 <Route exact path='/' element={<Index />} />
                 <Route exact path='/work' element={<Work />} />
                 <Route exact path='/about' element={<About/>} />
